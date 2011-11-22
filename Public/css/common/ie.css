@@ -1,0 +1,7 @@
+#content {position:absolute; width:10000px; height:540px; bottom:53px; left:0; z-index:110;} 
+			#index {width:960px; height:430px; margin:60px 50px 40px 20px; float:left; background:none; position:relative; }
+			#media {width:660px; height:383px; margin:50px 50px 40px 20px; float:left; background:none; position:relative; }
+			#tec_team {width:960px; height:430px; margin:50px 50px 40px 20px; float:left; background:none; position:relative; }
+			#tec_group {width:960px; height:430px; margin:50px 50px 40px 20px; float:left; background:none; position:relative; }
+			#contact {width:560px; height:430px; margin:50px 50px 40px 20px; float:left; background:none; position:relative; }
+.dt {float:none; position:absolute; right:35px;}

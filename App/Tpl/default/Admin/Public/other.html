@@ -1,0 +1,23 @@
+<layout name="Public:header" cache="60"/>
+
+	<form action={$action} method="post">
+	
+		{$title}
+		<textarea id="editor" name="editor">
+			{$contents}
+		</textarea>
+
+		<input class="button sub" value="完成" type="submit"/>
+	</form>
+
+	</div>
+	
+	<script type="text/javascript" src="__ROOT__/Ueditor/test/editor_config.js"></script>
+	<script type="text/javascript" src="__ROOT__/Ueditor/test/editor_ui_all_min.js"></script>
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Ueditor/test/themes/default/ueditor.css"/>
+	<script type="text/javascript" charset="utf-8">
+	    var editor = new baidu.editor.ui.Editor();
+	    editor.render('editor');  //editor为编辑器容器的id
+	</script>
+	
+<layout name="Public:footer" cache="60"/>

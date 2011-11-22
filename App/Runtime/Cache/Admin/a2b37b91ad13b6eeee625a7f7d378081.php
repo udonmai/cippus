@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><!-- layout::Public:header::60 --><!-- layout::Public:footer::60 -->

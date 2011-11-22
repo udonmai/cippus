@@ -1,0 +1,36 @@
+$(document).ready(function(){	
+	//sidebar伸缩效果
+	$('.sb_click').click(function(){
+		if($(this).next().is(":hidden")){
+			$('.sb_u:visible').slideUp();
+			$('.sb_click').prev().css({"background":"url(../img/options_default.png) no-repeat scroll  0 -10% transparent"});
+			$(this).next().slideDown();
+			$(this).prev().css({"background":"url(../img/options_default.png) no-repeat scroll  0 110% transparent"});
+		}
+		else {
+			$(this).next().slideUp();	
+			$(this).prev().css({"background":"url(../img/options_default.png) no-repeat scroll  0 -10% transparent"});
+		}
+	});	
+	
+	//全选
+	$('.all').click(function(){
+		$('.checkb:checkbox').attr('checked',true);
+		});
+		
+	$('.n_all').click(function(){
+		$('.checkb:checkbox').attr('checked',false);
+		});
+
+	//提醒
+	$('.mn').click(function(){
+		if($(this).next().is(":hidden")){
+			$('.notice:visible').slideUp();
+			$(this).next().slideDown();
+		}
+		else {
+			$(this).next().slideUp();	
+		}
+	});		
+
+	//

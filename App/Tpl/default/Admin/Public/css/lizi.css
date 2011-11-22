@@ -1,0 +1,302 @@
+html {
+	
+	}
+
+body {
+	color: #ADADAD;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    background: url(../img/bg1.png) repeat fixed center bottom;
+    padding-bottom: 60px;
+	}
+	
+#wrap {
+	margin: 0 auto;
+    width: 960px;
+	}
+
+#header {
+	height:386px;
+	//margin-top:50px;
+	}
+	
+#top {
+	position:fixed;	
+	//border:1px solid #000;
+	-moz-box-shadow:1px 1px 2px #333;
+	-webkit-box-shadow:1px 1px 2px #333;
+	box-shadow:1px 1px 2px #333;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=2,Direction=135,Color='#333');
+	filter:alpha(opacity=90);
+	-moz-opacity:0.90;
+	-khtml-opacity: 0.90;
+	opacity: 0.90;
+	}
+
+#header_top {
+
+	}
+	
+	
+#logo {
+	
+	}
+	
+#showdock {
+	height:346px;
+	padding-top:54px;:
+	position: relative;
+	-moz-box-shadow:1px 1px 4px #333;
+	-webkit-box-shadow:1px 1px 4px #333;
+	box-shadow:1px 1px 4px #333;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#333');
+	//top:-70px;
+	//left:0px;
+	//z-index:-1;
+	//background: url("../img/logo.jpg") ;
+	}
+	
+#logo {
+	width:519px;
+	float:left;
+	background: url("../img/bg2.png") repeat scroll 0 0 transparent;
+    height: 40px;
+    padding: 0 43px 0 40px;
+    padding-top: 12px;
+    color: #413F40;
+    font-family: 'Droid Sans',serif;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+	top:0px;
+	left:0px;
+	}
+	
+#logo_pic {
+	display:block;
+	background: url("../img/logo_geebox_2.png") no-repeat scroll 0 0 transparent;
+	height:59px;
+	width:180px;
+	margin:-12px 0 0 -25px;
+	}
+
+#logo_pic:hover {
+	display:block;
+	background: url("../img/logo_geebox_2.png") no-repeat scroll 0 -59px transparent;
+	height:59px;
+	width:180px;
+	margin:-12px 0 0 -25px;
+	}
+
+#main_nav {
+	width:300px;
+	float:right;
+	background: url("../img/bg2.png") repeat scroll 0 0 transparent;
+    height: 40px;
+    padding: 12px 0 0 58px;
+    padding-top: 12px;
+    color: #413F40;
+    font-family: 'Droid Sans',serif;
+    font-size: 14px;
+    font-weight: bold;
+    //position: relative;
+	}
+	
+#main_nav li {
+	float: left;
+    margin-right: 22px;
+    position: relative;
+ 	 }
+	
+#main_nav a {
+	border: 1px solid transparent;
+    display: block;
+    color: #413F40;
+    line-height: 28px;
+    padding: 0 10px;
+    text-decoration: none;
+	}	
+	
+#main_nav a:hover {
+	border: 1px solid transparent;
+    color: #413F40;
+    display: block;
+    line-height: 28px;
+    padding: 0 10px;
+    text-decoration: none;
+	}	
+	
+div#navlist ul a:hover {
+	background: none repeat scroll 0 0 #F45300;
+    border: 1px solid #C84502;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 4px #C64503 inset;
+    color: #FFFFFF;
+	}
+
+a#home_li {
+	background: none repeat scroll 0 0 #F45300;
+    border: 1px solid #C84502;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 4px #C64503 inset;
+    color: #FFFFFF;
+	}
+
+a:link, a:active, a:visited {
+    color: #ADADAD;
+    text-decoration: none;
+	}
+
+#main_content {
+	height:590px;
+	-moz-box-shadow:1px 1px 4px #333;
+	-webkit-box-shadow:1px 1px 4px #333;
+	box-shadow:1px 1px 4px #333;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#333');
+	}
+	
+#biolist_left {
+	height:560px;
+	width:310px;
+	padding:60px 0 0 0;
+	float:left;
+	}
+
+#biolist_mid {
+	height:560px;
+	width:310px;
+	margin:0 0 0 320px;
+	padding:60px 0 0 0;
+	}
+
+#biolist_right{
+	height:560px;
+	width:310px;
+	margin:0 0 0 0;
+	padding:60px 0 0 0;
+	float:right;
+	}
+
+.biol {
+	width:280px;
+	margin:30px 0 20px 30px;
+	
+	background-color:#333;
+	height:100px;
+	}
+	
+.biom {
+	width:280px;
+	margin:0 0 30px 20px;
+	
+	background-color:#333;
+	height:100px;
+	}
+
+.bior {
+	width:280px;
+	margin:0 30px 30px 0;
+	
+	background-color:#333;
+	height:100px;
+	}
+
+.avtar {
+	width:100px:
+	height:100px;
+	margin:30px 150px 0 30px;
+	background-color:#FFF;
+	}
+
+
+#main_content2 {
+	height:200px;
+	-moz-box-shadow:1px 1px 4px #333;
+	-webkit-box-shadow:1px 1px 4px #333;
+	box-shadow:1px 1px 4px #333;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#333');
+	}
+
+#fc_top {
+	background: url("../img/patch2.png") repeat scroll 0 0 transparent;
+    border-top: 1px solid #343233;
+    height: 10px;
+  }
+    
+#frame_container {
+	background: url("../img/patch1.png") repeat scroll 0 0 transparent;
+    height: 120px;
+    padding: 0 50px;
+
+	}
+	
+#containerlist{
+	padding:25px 0 0 0;
+	}
+	
+#containerlist li{
+	float:left;
+	display:inline;
+	}
+	
+#containerlist a{
+	display:block;
+	height:70px;
+	width:65px;
+	margin-right:40px;
+	}
+	
+#mac_plat {
+	background:url("../img/platform-icons-mac.png") no-repeat scroll left center transparent;
+	}
+	
+#containerlist li a:hover {
+	background:url("../img/platform-icons-mac.png") no-repeat scroll left center transparent #FFF;
+	}
+	
+#win_plat {
+	background:url("../img/platform-icons-win.png") no-repeat scroll left center transparent;
+	}
+	
+#android_plat {
+	background:url("../img/platform-icons-droid.png") no-repeat scroll left center transparent;
+	}
+	
+#iphone_plat {
+	background:url("../img/platform-icons-iphone.png") no-repeat scroll left center transparent;
+	}
+	
+#web_plat {
+	background:url("../img/platform-icons-web.png") no-repeat scroll left center transparent;
+	}
+	
+#fc_bottom {
+	background: url("../img/patch2.png") repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #343233;
+    height: 10px;
+  }
+	
+#footer {
+	
+	}
+	
+#footer_content {
+	background: none repeat scroll 0 0 #4A4744;
+    border-top: 11px solid #615F5D;
+    color: #848484;
+    line-height: 150%;
+    height:200px;
+    padding: 20px 40px 30px;
+	}
+
+#footer_bottom {
+	background: url("../img/patch1.png") repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #3B3836;
+    border-top: 1px solid #363330;
+    border-bottom: 1px solid #444444;
+    box-shadow: 0 2px 0 0 #262626, 0 -1px 0 0 #171717;
+    color: #848484;
+    height: 59px;
+    padding: 0 40px;
+	}

@@ -1,0 +1,23 @@
+	html{}
+	wrap {height:100%; z-index:0; }
+	#container {z-index:145; position:absolute;}
+	
+	#content {position:absolute; width:10000px; height:540px; bottom:-80px; left:0; z-index:110; background: rgba(67, 100, 167, .15); } 
+	#navi_bar {position:absolute; width:10000px; height:4px; bottom:400px; z-index:110;}
+	#index {width:1000px; height:430px; margin:80px 50px 40px 20px; float:left; background-color:#235; background: rgba(67, 100, 155, .2);}
+
+	#footer {position:fixed; width:10000px; height:580px; bottom:0; left:0; z-index: 100;}
+		.stage {position:fixed; width:10000px; height:580px; bottom:0; left:0;}
+			#sky {background: url("../../imgs/bg.jpg") no-repeat scroll 0 0 transparent;}
+			#cloud1 {height:150px; position:relative; bottom:80px; width:10000px; background: transparent url(../../imgs/cloud1.png) 0 0px repeat-x; z-index: 125}
+			#cloud2 {height:150px; position:relative; bottom:80px; width:10000px; background: transparent url(../../imgs/cloud2.png) 0 0px repeat-x; z-index: 135; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));}
+			
+	#rocket {}
+		#rocket a {position:absolute; bottom:25px; right:50px; z-index:220; height:55px; width:55px; display:inline; height:55px; background: url("../../imgs/rocket.png") no-repeat scroll 0 0 transparent;}
+		#rocket a:hover {background-position:-75px 0;}
+
+	#building {}	
+		#building a {position:absolute; bottom:20px; right:100px; z-index:220; height:200px; width:200px; display:inline; background: url("../../imgs/jsz.gif") no-repeat scroll 0 0 transparent;}
+		#buildingp {color:#000; font-size: 2.5em; margin:50px 0 0 50px;}
+
+	#media_item a {float:left;}	
