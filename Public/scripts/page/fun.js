@@ -29,7 +29,7 @@
 
 		$.ajax({
 			type:"GET",
-			url:"http://cippus.dlut.edu.cn/index.php/Home/Index/news?id="+id,
+			url:"http://localhost/cippus/index.php/Home/Index/news?id="+id,
 			dataType:"html",
 			success:function(data, textStatus){
 						$('#waiting').fadeOut();					
@@ -56,7 +56,7 @@
 		
 		$.ajax({
 			type:"GET",
-			url:"http://cippus.dlut.edu.cn/index.php/Index/page?more="+num,
+			url:"http://localhost/cippus/index.php/Index/page?more="+num,
 			dataType:"html",
 			success:function(data, textStatus){
 						$('#waiting').fadeOut();	
@@ -74,7 +74,7 @@
 
 							$.ajax({
 								type:"GET",
-								url:"http://cippus.dlut.edu.cn/index.php/Home/Index/news?id="+id,
+								url:"http://locahost/cippus/index.php/Home/Index/news?id="+id,
 								dataType:"html",
 								success:function(data, textStatus){
 									$('#waiting').fadeOut();					
