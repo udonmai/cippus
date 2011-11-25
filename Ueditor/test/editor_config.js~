@@ -86,20 +86,20 @@ var UEDITOR_CONFIG = {
         'insertframe':'插入Iframe'
     },
     iframeUrlMap: {
-        'anchor': '../dialogs/anchor/anchor.html',
-        'image': '../dialogs/image/image.html',
-        'inserttable': '../dialogs/table/table.html',
-        'link': '../dialogs/link/link.html',
-        'emoticon': '../dialogs/emoticon/emoticon.html',
-        'spechars': '../dialogs/spechars/spechars.html',
-        'searchreplace': '../dialogs/searchreplace/searchreplace.html',
-        'map': '../dialogs/map/map.html',
-        'gmap': '../dialogs/gmap/gmap.html',
-        'video': '../dialogs/video/video.html',
-        'help': '../dialogs/help/help.html',
-        'code' : '../dialogs/code/code.html',
-        'multimenu': '../dialogs/menu-emoticon/emoticon.html',
-        'insertframe': '../dialogs/insertframe/insertframe.html'
+        'anchor': '/PHP/cippus/Ueditor/dialogs/anchor/anchor.html',
+        'image': '/PHP/cippus/Ueditor/dialogs/image/image.html',
+        'inserttable': '/PHP/cippus/Ueditor/dialogs/table/table.html',
+        'link': '/PHP/cippus/Ueditor/dialogs/link/link.html',
+        'emoticon': '/PHP/cippus/Ueditor/dialogs/emoticon/emoticon.html',
+        'spechars': '/PHP/cippus/Ueditor/dialogs/spechars/spechars.html',
+        'searchreplace': '/PHP/cippus/Ueditor/dialogs/searchreplace/searchreplace.html',
+        'map': '/PHP/cippus/Ueditor/dialogs/map/map.html',
+        'gmap': '/PHP/cippus/Ueditor/dialogs/gmap/gmap.html',
+        'video': '/PHP/cippus/Ueditor/dialogs/video/video.html',
+        'help': '/PHP/cippus/Ueditor/dialogs/help/help.html',
+        'code' : '/PHP/cippus/Ueditor/dialogs/code/code.html',
+        'multimenu': '/PHP/cippus/Ueditor/dialogs/menu-emoticon/emoticon.html',
+        'insertframe': '/PHP/cippus/Ueditor/dialogs/insertframe/insertframe.html'
     },
     listMap: {
         'fontfamily': ['宋体', '楷体', '隶书', '黑体','andale mono','arial','arial black','comic sans ms','impact','times new roman'],
@@ -238,7 +238,7 @@ var UEDITOR_CONFIG = {
     initialStyle: '',                                    //编辑器内部样式
     defaultFontSize:"16px",                              //默认字号
     defaultFontFamily:"宋体",                            //默认字体
-    initialContent: '<span style="color:#ccc">欢迎使用ueditor</span>',  //初始化编辑器的内容
+    initialContent: '<span style="color:#ccc">CIPPUS~~</span>',  //初始化编辑器的内容
     autoClearinitialContent :false,                       //是否自动清除编辑器初始内容
     iframeCssUrl :'../themes/default/iframe.css',        //要引入css的url
     removeFormatTags : 'b,big,code,del,dfn,em,font,i,ins,kbd,q,samp,small,span,strike,strong,sub,sup,tt,u,var',    //清除格式删除的标签
@@ -253,7 +253,7 @@ var UEDITOR_CONFIG = {
     indentValue : '2em',                                 //初始化时，首行缩进距离
     pageBreakTag : '_baidu_page_break_tag_',             //分页符
     minFrameHeight: 320,                                 //最小高度
-    autoHeightEnabled: false,                             //是否自动长高
+    autoHeightEnabled: true,                             //是否自动长高
     autoFloatEnabled: true,                              //是否保持toolbar的位置不动
     elementPathEnabled : true,                           //是否启用elementPath
 //    wordCount:true,                                      //是否开启字数统计

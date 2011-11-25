@@ -8,7 +8,7 @@ return array(
     'DB_HOST'		=> 'localhost',
     'DB_NAME'		=> 'cippus',
     'DB_USER'		=> 'root',
-    'DB_PWD'		=> 'cippus',
+    'DB_PWD'		=> 'changyisheng',
     'DB_PORT'		=> '3306',
     'URL_MODEL'         => 2
 );

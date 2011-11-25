@@ -1,5 +1,8 @@
 <?php
-	class GroupAction extends Action{
+		  class GroupAction extends CommonAction{
+				
+		  	}
+	/*class GroupAction extends Action{
 		public function show(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
@@ -25,5 +28,5 @@
 			$this->display('Index:index');
 		}
 	}
-	}
+	}*/
 ?>

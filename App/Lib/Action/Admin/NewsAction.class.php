@@ -1,6 +1,22 @@
 <?php
-	class NewsAction extends Action{
-		public function show(){
+			class NewsAction extends CommonAction{
+					public function news(){
+									$this->show('News');						
+						}
+					public function shownews(){
+										$this->showall('News');							
+							}				
+						public function editnews(){
+											$this->show('News',$_GET['id']);  	
+							}
+						public function updatenews(){
+										echo $_POST['title']."<br/>";
+										echo $_POST['editorValue']."<br/>";
+										echo $_GET['id']."<br/>";
+									$this->edit($_POST['title'],$_POST['editorValue'],$_GET['id'],'News');				
+							}
+	//class NewsAction extends CommonAction{
+	/*	public function show(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
 		}else{
@@ -12,8 +28,8 @@
 			$this->assign('title',$title);
 			$this->display("Public:other");
 		}
-	}
-		public function edit(){
+	}*/
+/*		public function edit(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
 		}else{
@@ -24,8 +40,8 @@
 			$others->data($contents)->add();
 			$this->redirect("showall");
 		}
-	}
-		public function showall(){
+	}*/
+	/*	public function showall(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
 		}else{
@@ -72,13 +88,14 @@
 			}
 		//尾页
 				$Page.='<a href=__APP__/Admin/News/showall?currentpage='.$pages.'> 尾页</a>';
+	
 		//直接跳转到某页
 		/*	$Page.='<form name=currentpage action=__APP__/Admin/News/showall?currentpage='..' method=get >
 			 		第<input name=currentpage id=currentpage type=text />页'
 					.'<input type=submit value=Go/> 
 				</form>';*/
 		//每次查询新闻的条目
-			$list=$news->order('lanchtime desc')->limit($first.','.$mark)->select();//$first为此页面的首个记录在总记录中的位置
+/*			$list=$news->order('lanchtime desc')->limit($first.','.$mark)->select();//$first为此页面的首个记录在总记录中的位置
 			foreach($list as $example){
 				$show.="<ul>";
 				$show.="<li>".$example['id']."</li>";
@@ -92,7 +109,8 @@
 			$this->assign('page',$Page);
 			$this->display("Public:default");
 		}
-	}
+	}*/
+	/*
 		public function editall(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
@@ -104,7 +122,7 @@
 			$example=$news->where("id='$id'")->find();
 			$title=$example['title'];
 			$title="<p id='tt'>标题:</p><input id='title' type='text' name='title'"."value='$title'"."/>";	
-			$action='__APP__/Admin/News/update?id='."$id";
+			$action='__APP__/Admin/News/updatenews?id='."$id";
 			$this->assign('login',$login);
 			$this->assign('action',$action);
 			$this->assign('title',$title);
@@ -112,7 +130,8 @@
 			$this->display('Public:other');					
 		}
 	}
-		public function update(){
+	*/
+	/*	public function update(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
 		}else{
@@ -134,5 +153,7 @@
 			$this->redirect('showall');
 		}
 	}
+	}
+	*/
 	}
 ?>

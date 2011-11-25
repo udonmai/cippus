@@ -1,9 +1,32 @@
 <?php
-	class HomeAction extends Action{
-		public function showpics(){
+		class HomeAction extends CommonAction{
+						public function 	showpics(){
+									$this->showall('Pics');			
+							}
+						public function editpics(){ 
+							//显示id是GET['id']的图片的信息						
+									$this->show('Pics',$_GET['id']);  	
+							}
+						 public function updatepics(){
+									$this->edit($_POST['title'],$_POST['editorValue'],$_GET['id'],'Pics');
+							}
+						public function topic(){
+													$this->show('Topics');
+							}
+						public function showtopics(){
+									$this->showall('Topics');								
+							}
+						public function edittopics(){
+										$this->show('Topics',$_GET['id']);
+								}
+						public function updatetopics(){
+										$this->edit($_POST['title'],$_POST['editorValue'],$_GET['id'],'Topics');			
+								}
+//	class HomeAction extends CommonAction{
+	/*	public function showpics(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
-		}else{
+			}else{
 			$pics=M('pics');
 			$list=$pics->select();
 			$login="<a href='__APP__/Admin/Quit/index'><div id='quit'>退出</div></a>";	
@@ -18,8 +41,8 @@
 			$this->assign('show',$show);
 			$this->display();
 	}
-		}
-		public function editpic(){
+		}*/
+/*		public function editpic(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
 		}else{
@@ -37,8 +60,8 @@
 			$this->assign('contents',$example['content']);
 			$this->display('Public:other');			
 		}
-	}
-		public function updatepic(){
+	}*/
+/*		public function updatepic(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
 		}else{
@@ -49,8 +72,8 @@
 			$news->where("id='$id'")->save($contents);	
 			$this->redirect("showpics");			
 		}
-	}
-		public function showtopics(){
+	}*/
+	/*	public function showtopics(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
 		}else{
@@ -78,7 +101,7 @@
 			if(isset($_GET['id'])){
 				$topics=M('topics');
 				$id=$_GET['id'];
-				$action='__APP__/Admin/Home/updatetopic?id='."$id";
+				$action='__APP__/Admin/Home/updatetopics?id='."$id";
 				$example=array();
 				$example=$topics->where("id='$id'")->find();
 				$title=$example['title'];
@@ -90,7 +113,7 @@
 			$this->display("Public:other");	
 		}
 	}
-		public function updatetopic(){
+/*		public function updatetopic(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
 		}else{
@@ -108,6 +131,6 @@
 			//dump($contents);
 			$this->redirect("showtopics");	
 		}
-	}		
+	}	*/	
 	}
 ?>

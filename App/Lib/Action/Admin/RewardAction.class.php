@@ -1,5 +1,7 @@
 <?php
-	class RewardAction extends Action{
+			class RewardAction extends CommonAction{	
+				}
+	/*class RewardAction extends CommonAction{
 		public function show(){
 		if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
@@ -25,5 +27,5 @@
 			$this->display('Index:index');
 		}
 	}
-	}
+	}*/
 ?>
