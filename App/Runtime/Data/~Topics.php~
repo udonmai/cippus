@@ -1,0 +1,60 @@
+<?php
+return array (
+  0 => 
+  array (
+    'id' => '1',
+    'title' => 'topic1',
+    'lanchtime' => '2011-11-25 16:02:44',
+    'content' => '<p>345topic1rquq234</p>',
+  ),
+  1 => 
+  array (
+    'id' => '2',
+    'title' => 'topic2',
+    'lanchtime' => '2011-11-16 11:54:18',
+    'content' => '<p>topic2</p>',
+  ),
+  2 => 
+  array (
+    'id' => '3',
+    'title' => '3465',
+    'lanchtime' => '2011-11-19 16:53:52',
+    'content' => '<p><span style="color:#ccc">欢迎使用ueditor</span></p>',
+  ),
+  3 => 
+  array (
+    'id' => '4',
+    'title' => '456',
+    'lanchtime' => '2011-11-19 19:18:22',
+    'content' => '<p><span style="color:#ccc">欢迎使用ueditor</span></p>',
+  ),
+  4 => 
+  array (
+    'id' => '5',
+    'title' => '234',
+    'lanchtime' => '2011-11-19 19:35:05',
+    'content' => '<p>1234<br /></p>',
+  ),
+  5 => 
+  array (
+    'id' => '6',
+    'title' => '345',
+    'lanchtime' => '2011-11-19 19:36:17',
+    'content' => '<p><span style="color:#ccc">wtr欢迎使用ueditor</span></p>',
+  ),
+  6 => 
+  array (
+    'id' => '9',
+    'title' => '2345',
+    'lanchtime' => '2011-11-23 13:02:48',
+    'content' => '<p><span style="color:#ccc">23452345</span></p>',
+  ),
+  7 => 
+  array (
+    'id' => '10',
+    'title' => 'icys',
+    'lanchtime' => '2011-11-25 16:25:20',
+    'content' => '<p>icys<br /></p>',
+  ),
+);
+?>

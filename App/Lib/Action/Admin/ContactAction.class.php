@@ -1,5 +1,10 @@
 <?php
-	class ContactAction extends Action{
+	class ContactAction extends CommonAction{
+		public function _initialize(){
+			parent::_initialize();
+		}
+	}
+/*	class ContactAction extends Action{
 		public function show(){
 			if(!isset($_SESSION['account'])){
 			$this->redirect('Index/login');	
@@ -26,4 +31,5 @@
 		}
 	}
 	}
+*/
 ?>
